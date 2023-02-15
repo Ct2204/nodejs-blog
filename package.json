@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ct2204/nodejs-blog.git"
+  },
+  "keywords": [
+    "nodejs-basic"
+  ],
+  "author": "Cong Thuong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ct2204/nodejs-blog/issues"
+  },
+  "homepage": "https://github.com/Ct2204/nodejs-blog#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
