@@ -3,11 +3,10 @@ const router = express.Router()
 
 const newsController = require('../app/controllers/NewsController')
 
-router.use('/name',newsController.name)
-router.use('/mo',newsController.show)
+router.get('/name',newsController.name)
+router.get('/mo',newsController.show)
 
-router.use('/',newsController.index)
-
+router.get('/',newsController.index)
 
 
 

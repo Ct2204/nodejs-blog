@@ -4,8 +4,16 @@ const handlebar = require('express-handlebars')
 const path = require('path');
 const { extname } = require('path');
 const { query } = require('express');
-
 const route = require('./routes')
+const db = require('./config/db')
+const imgdb = require('./config/db/imagedb')
+const videodb = require('./config/db/videodb')
+//Conect db
+
+imgdb.connect();
+db.connect();
+
+videodb.connect();
 
 const app = express()
 const port = 3000

@@ -3,6 +3,8 @@ const searchRouter = require('./search')
 const cartRouter = require('./cart')
 function route(app) {
 
+
+    
     app.use('/news', newsRouter);
 
     app.use('/search', searchRouter);
@@ -15,14 +17,7 @@ function route(app) {
     
 
     
-   
-    
-    // app.get('/search', (req, res) => {
-        
-    //     res.render('search');
-    // })
-    
-   
+
     
 
 }
